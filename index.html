@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Intro section with dropdown navigation</title>
+
+</head>
+<body>
+
+    <header class="header flex-center">
+        <a href="#" class="logo">
+            <img src="./images/logo.svg" alt="logo">
+        </a>
+
+        <nav class="nav flex-center">
+            <button type="button" class="nav__item nav__item--dropdown flex-center">
+                <span>Features</span>
+                <img src="./images/icon-arrow-down.svg" alt="down arrow">
+            </button>
+
+            <div class="options">
+                <a href="#" class="nav__item--link flex-center option">
+                    <img src="./images/icon-todo.svg" alt="todo-icon"> 
+                    <span>Todo List</span>
+                </a>
+
+                <a href="#" class="nav__item--link flex-center option">
+                    <img src="./images/icon-calendar.svg" alt="calendar-icon"> 
+                    <span>Calender</span>
+                </a>
+
+                <a href="#" class="nav__item--link flex-center option">
+                    <img src="./images/icon-reminders.svg" alt="reminders-icon"> 
+                    <span>Reminders</span>
+                </a>
+
+                <a href="#" class="nav__item--link flex-center option">
+                    <img src="./images/icon-planning.svg" alt="planning-icon"> 
+                    <span>Planning</span>
+                </a>
+            </div>
+
+            <button type="button" class="nav__item nav__item--dropdown flex-center">
+                <span>Company</span>
+                <img src="./images/icon-arrow-down.svg" alt="down arrow">
+            </button>
+            
+            <a href="#" class="nav__item nav__item--link">Carrers</a>
+            <a href="#" class="nav__item nav__item--link">About</a>
+
+            <button type="button" class="nav__item nav__item--button ml-auto">Login</button>
+            <button type="button" class="nav__item nav__item--button cta">Register</button>
+        </nav>
+    </header>
+  
+</body>
+</html>

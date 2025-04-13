@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Colors */
+
+    --white: hsl(0, 0%, 98%);
+    --gray: hsl(0, 0%, 41%);
+    --black: hsl(0, 0%, 8%);
+
+    /* Font */
+
+    --font-body: "Epilogue", sans-serif;
+    --font-size-base: 1.125rem;
+
+    /* weight */
+
+    --fw-bold: 500;
+    --fw-extrabold: 700;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+/* Utility class */
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: var(--white);
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+}
+
+.header {
+    gap: 3rem;
+    padding: 1.5rem 2rem;
+}
+
+.nav {
+    width: 100%;
+    gap: 2.5rem;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.nav__item {
+    font-weight: var(--fw-bold);
+    color: var(--gray);
+    cursor: pointer;
+}
+
+.nav__item:hover {
+    color: var(--black);
+}
+
+.nav__item--dropdown {
+    background-color: transparent;
+    border: 0;
+    gap: 1rem;
+    position: relative;
+}
+
+.nav__item--button {
+    background-color: transparent;
+    border: 0;
+}
+
+.nav__item--button.cta {
+    border: 2px solid var(--gray);
+    padding: 0.875rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.nav__item--link {
+    text-decoration: none;
+}
+
+.options {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: var(--white);
+    position: absolute;
+    top: 10%;
+    border-radius: 0.5rem;
+}
+
+.option {
+    color: var(--gray);
+    gap: 0.25rem;
+    /* padding: 1rem; */
+}
