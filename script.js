@@ -1,13 +1,11 @@
-const dropdowns = document.querySelectorAll(".nav__item--dropdown");
-// console.log(dropdowns);
+const closeSidebar = document.getElementById("close-sidebar");
+const openSidebar  = document.getElementById("open-sidebar");
+const navbar = document.querySelector(".nav");
 
-dropdowns.forEach((dropdown) => {
-    dropdown.addEventListener("click", (e) => {
-        const button = e.target.closest(".nav__item--dropdown");
-        if(!button) {
-            return;
-        }
+closeSidebar.addEventListener("click", () => {
+    navbar.classList.remove("show");
+});
 
-        button.classList.toggle("show");
-    });
+openSidebar.addEventListener("click", () => {
+    navbar.classList.add("show");
 });
